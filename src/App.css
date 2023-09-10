@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html{
+  background-color: #212121;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  
+  background-position: center;
+ background-repeat: no-repeat;
+  
+  width: 100vw;
+  height: 100vh;
+  transition: 0.3s all ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.videos-background{
+  background-image: url("https://wallpapers.com/images/hd/1920x1080-pictures-zog2vma3qpmt2o9l.jpg");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pics-background{
+  background-image: url("https://wallpapers.com/images/hd/1920x1080-pictures-q3sujoyo7upr3bmr.jpg");
+}
+.connect-background{
+  background-image: url("https://wallpaperaccess.com/full/343619.jpg");
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.header-left a{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+
+
+.header-right ul{
+  padding: 0;
+  margin:0;
+  display: flex;
+  list-style: none;
+}
+
+.header-right a{
+  color: white;
+  font-size: 24px;
+  margin-right: 24px;
+}
+
+.hero{
+  width: 60vw;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  
+  
+}
+.hero li{
+  list-style: none;
+}
+
+.hero a{
+  text-decoration: none;
+  font-size: 110px;
+  font-weight: bold;
+  transition: 0.3s all ease;
   color: white;
+  font-family: 'Roboto', sans-serif;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.hero a:hover{
+  color: skyblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
